@@ -7,7 +7,20 @@ gem 'rails', '4.0.0'
 gem 'sqlite3'
 
 group :development, :test do
+	gem 'guard-rspec'
+	gem 'guard-livereload'
+	gem 'spork-rails', :git => "https://github.com/sporkrb/spork-rails.git"
+	gem 'guard-spork'
+	gem 'childprocess'
 	gem 'jasminerice', :git => 'https://github.com/bradphelan/jasminerice.git'
+end
+
+group :test do
+	gem 'rspec-rails'
+	gem 'selenium-webdriver', "~>2.35.1"
+	gem 'capybara'
+	gem 'factory_girl_rails'
+	gem 'database_cleaner'
 end
 
 group :assets do
