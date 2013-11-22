@@ -6,6 +6,10 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+group :development, :test do
+	gem 'jasminerice', :git => 'https://github.com/bradphelan/jasminerice.git'
+end
+
 group :assets do
 	# Use SCSS for stylesheets
 	gem 'sass-rails', '~> 4.0.0'
@@ -18,7 +22,7 @@ gem 'ember-rails', :git => "https://github.com/emberjs/ember-rails.git"
 
 
 # Use CoffeeScript for .js.coffee assets and views
-# gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

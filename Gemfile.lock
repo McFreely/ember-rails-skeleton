@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/bradphelan/jasminerice.git
+  revision: 091349c27343bfa728b8e5745675f9ddbb7d9699
+  specs:
+    jasminerice (0.1.0)
+      coffee-rails
+
+GIT
   remote: https://github.com/emberjs/ember-rails.git
   revision: 319c0a277b5c05121385fb8e76710e6efa800537
   specs:
@@ -133,7 +140,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-rails (~> 4.0.0)
   ember-rails!
+  jasminerice!
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.0)
